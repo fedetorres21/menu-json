@@ -1,0 +1,290 @@
+[
+    {
+        "nombre": "Menú",
+        "icon": "ri-home-4-line",
+        "layoutCode": "home1",
+        "submenu": [
+        ],
+        "activo": ["home1"]
+    },
+    {
+        "nombre": "Operarios", 
+        "layoutCode": "",
+        "icon": "ri-user-2-fill",
+        "submenu": [
+            {
+                "nombre": "Operarios",
+                "layoutCode": "oper1",
+                "icon": "ri-user-2-fill"
+            },
+            {
+                "nombre": "Candidaturas",
+                "layoutCode": "cand7",
+                "icon": "ri-filter-2-line"
+            },
+            {
+                "nombre": "Convenios",
+                "layoutCode": "conv1",
+                "icon": "ri-article-line"
+            }
+        ],
+        "activo": ["oper1", "oper2", "oper5", "oper6", "oper7", "oper77", "oper9", "oper12", "oper13", "oper24", "oper34", "oper36", "oper16", "cand7", "cand1", "cand5", "cand6", "prgu5", "cand8", "cand2", "conv1", "conv2", "cust228", "cust234", "reho12", "reho13", "oper", "cust223", "opin2", "oper44", "oper50", "cust231", "oper37"]
+
+    },
+    {
+        "nombre": "Contratos",
+        "icon": "ri-file-edit-line",
+        "layoutCode": "cotr1",
+        "submenu": [
+        ],
+        "activo": ["cotr1", "cotr2", "cotr8", "cotr7", "cotr6", "cotr11", "cotr18", "cotr19", "cotr20"]
+
+    },
+    {
+        "nombre": "Clientes",
+        "icon": "ri-team-fill",
+        "layoutCode": "cust1",
+        "submenu": [
+        ],
+        "activo": ["cust1", "cust7", "cust8", "cust16", "cust20", "cust9", "cust8", "cust22", "cust26", "cust28", "cust11", "cust29", "cust27", "cust2", "cust6"]
+
+    },
+    {
+        "nombre": "Formulario", 
+        "layoutCode": "",
+        "icon": "ri-file-list-3-line",
+        "submenu": [
+            {
+                "nombre": "Uniformes",
+                "layoutCode": "fomu2",
+                "icon": "ri-t-shirt-fill"
+            },
+            {
+                "nombre": "Actividad",
+                "layoutCode": "fomu7",
+                "icon": "ri-time-fill"
+            },
+            {
+                "nombre": "Registro de gastos",
+                "layoutCode": "fomu4",
+                "icon": "ri-money-euro-circle-fill"
+            },
+            {
+                "nombre": "Vacaciones",
+                "layoutCode": "fomu1",
+                "icon": "ri-suitcase-2-fill"
+            },
+            {
+                "nombre": "Orden de trabajo",
+                "layoutCode": "fomu30",
+                "icon": "ri-drag-move-2-fill"
+            },
+            {
+                "nombre": "Orden de movimiento",
+                "layoutCode": "acti9",
+                "icon": "ri-steering-2-line"
+            },
+            {
+                "nombre": "Orden de reparación",
+                "layoutCode": "fomu51",
+                "icon": "ri-tools-fill"
+            },
+            {
+                "nombre": "Control de llaves",
+                "layoutCode": "fomu36",
+                "icon": "ri-key-2-fill"
+            }
+        ],
+        "activo": ["fomu2", "fomu88", "fomu222", "fomu10", "fomu7", "fomu777", "fomu778", "fomu779", "fomu16", "fomu4", "fomu45", "fomu11", "fomu1", "reho14", "vaca2", "vaca7", "fomu9", "oper45", "fomu37", "fomu30", "acti9", "fomu51", "fomu36", "fomu366", "coll2", "fomu33", "fomu333", "acti10", "reho141", "reho1411", "reho142", "reho1421", "reho143", "reho144"]
+
+    },
+    {
+        "nombre": "Facturación", 
+        "layoutCode": "",
+        "icon": "ri-draft-line",
+        "submenu": [
+            {
+                "nombre": "Contratos",
+                "layoutCode": "cocl1",
+                "icon": "ri-file-edit-line"
+            },
+            {
+                "nombre": "Facturación",
+                "layoutCode": "sell1",
+                "icon": "ri-book-mark-fill"
+            },
+            {
+                "nombre": "Notas de entrega",
+                "layoutCode": "reno1",
+                "icon": "ri-survey-fill"
+            }
+        ],
+        "activo": ["cocl1", "cocl9", "cocl29", "cocl2", "cocl55", "sell1", "sell2", "sell13", "invo1", "invo2", "invo11", "man1", "efec1", "reme1", "invo8", "invo6", "reno1", "reno2", "reno14", "reno8", "reno7", "reno15", "reno20", "reno9", "cocl22", "cocl23","cocl12", "cocl233"]
+
+    },
+   
+    {
+        "nombre": "Almacén", 
+        "layoutCode": "",
+        "icon": "ri-archive-fill",
+        "submenu": [
+            {
+                "nombre": "Activos",
+                "layoutCode": "acti1",
+                "fe": "0",
+                "icon": "ri-search-line"
+            },
+            {
+                "nombre": "Vehículos",
+                "layoutCode": "vehi1",
+                "fe": "1",
+                "icon": "ri-car-fill"
+            },
+            {
+                "nombre": "Almacén",
+                "layoutCode": "stor1",
+                "icon": "ri-archive-fill"
+            },
+            {
+                "nombre": "Utensilios",
+                "layoutCode": "uten1",
+                "icon": "ri-tools-fill"
+            },
+            {
+                "nombre": "Uniformes",
+                "layoutCode": "unif1",
+                "icon": "ri-t-shirt-2-fill"
+            },
+            {
+                "nombre": "Piezas de recambio",
+                "layoutCode": "reca1",
+                "icon": "ri-settings-6-line"
+            },
+            {
+                "nombre": "Productos",
+                "layoutCode": "prod1",
+                "icon": "ri-dropbox-fill"
+            }
+        ],
+        "activo": ["acti1", "acti6", "acti7", "acti30", "acti31", "acti2", "stor1", "stor4", "stor2", "inve1", "acti29", "invw1", "uten1", "uten2", "unif1", "unif2", "reca1", "reca2", "reca4", "prod1", "prod4", "prod2", "prod7", "prod5", "prod6", "prod8", "prod9", "vehi1", "vehi30", "vehi31", "vehi7", "vehi6", "vehi2", "vehi28", "vehi26", "vehi32"]
+
+    },
+    {
+        "nombre": "Servicios", 
+        "layoutCode": "",
+        "icon": "ri-grid-fill",
+        "submenu": [
+            {
+                "nombre": "Tarifas",
+                "layoutCode": "tari1",
+                "icon": "ri-money-euro-box-fill"
+            },
+            {
+                "nombre": "Solicitud presupuestos",
+                "layoutCode": "sopr1",
+                "icon": "ri-question-answer-fill"
+            },
+            {
+                "nombre": "Presupuestos",
+                "layoutCode": "esti14",
+                "icon": "ri-article-line"
+            },
+            {
+                "nombre": "Servicios",
+                "layoutCode": "cris1",
+                "icon": "ri-grid-fill"
+            }
+        ],
+        "activo": ["cris1", "cris9", "cris18", "cris6", "cris7", "cris8", "cris12", "cris10", "cris11", "cris21", "cris2", "cris24", "cris25", "cris26", "cris27", "cris28", "cris29", "cris30", "cris31", "cris32", "cris34", "tari1", "tari2", "sopr1", "sopr2", "sopr7", "sopr6", "sopr8", "sopr9", "sopr10", "sopr4", "sopr13", "sopr14", "sopr17", "esti4", "esti1", "esti2", "esti5", "esti6", "prgu1", "esti12", "esti11", "esti10", "esti9", "esti8", "esti7", "esti14"]
+
+    },
+    {
+        "nombre": "Calidad",
+        "icon": "ri-search-line",
+        "layoutCode": "cali1",
+        "submenu": [
+        ],
+        "activo": ["cali6", "cali7", "cali8", "cali11", "cali9", "cali10", "fomu31", "cali21", "cali1", "fomu77777", "fomu16", "cali5", "cali2", "cali24", "cali44"]
+
+    },
+    {
+        "nombre": "Compras", 
+        "layoutCode": "",
+        "icon": "ri-truck-line",
+        "submenu": [
+            {
+                "nombre": "Proveedores",
+                "layoutCode": "supp1",
+                "icon": "ri-filter-3-line"
+            },
+            {
+                "nombre": "Pedidos de compra",
+                "layoutCode": "buyo1",
+                "icon": "ri-shopping-cart-2-fill"
+            },
+            {
+                "nombre": "Hoja de encargo",
+                "layoutCode": "subc1",
+                "icon": "ri-file-list-line"
+            }
+        ],
+        "activo": ["buyo13", "buyo6", "buyo1", "buyo2", "subc1", "subc2", "subc4","supp2", "supp1", "supp8", "supp9"]
+
+    },
+    {
+        "nombre": "Prog. Trabajo", 
+        "layoutCode": "",
+        "icon": "ri-calendar-check-fill",
+        "submenu": [
+            {
+                "nombre": "Prog. Trabajo",
+                "layoutCode": "cris19",
+                "icon": "ri-microsoft-line"
+            },
+            {
+                "nombre": "Cuadrantes",
+                "layoutCode": "cuad12",
+                "icon": "ri-calendar-2-line"
+            }
+        ],
+        "activo": ["fomu89", "cris19", "fomu52", "fomu15", "cuad12"]
+
+    },
+    {
+        "nombre": "Comunicados",
+        "layoutCode": "comu1",
+        "icon": "ri-mail-send-fill",
+        "submenu": [
+        ],
+        "activo": ["comu1", "comu2", "comu4", "comu5", "comu11", "comu6", "comu7"]
+    },
+    {
+        "nombre": "Contactos",
+        "icon": "ri-contacts-book-line",
+        "layoutCode": "cont1",
+        "submenu": [
+        ],
+        "activo": ["cont1", "cont2"]
+
+    },
+ {
+        "nombre": "Cuadro de mando", 
+        "layoutCode": "cocl666",
+        "icon": "ri-funds-box-line",
+        "submenu": [
+            
+        ],
+        "activo": [ "cocl6", "cocl11", "cocl7"]
+
+    },
+    
+    {
+        "nombre": "Preferencias",
+        "icon": "ri-settings-2-fill",
+        "layoutCode": "usrs1",
+        "submenu": [
+        ],
+        "activo": ["usrs1", "usrs2", "usrs4", "usrs5", "usrs6", "usrs7", "usur1"]
+
+    }
+]
