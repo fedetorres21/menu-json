@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>Menu Unified</title>
     <!-- Fonts and Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -180,6 +181,23 @@
             padding: 2px;
         }
 
+        /* --- Anti-Zoom / Scaling Fixes for Windows WebViewer --- */
+        html,
+        body {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            zoom: 1 !important;
+        }
+
+        @media screen and (min-width: 0\0) {
+
+            /* Targeting IE/Edge-based WebViewer specifically */
+            @-ms-viewport {
+                width: device-width;
+                zoom: 1;
+            }
+        }
+
         /* Indicator arrow */
         .arrow-indicator {
             font-size: 0.8em;
@@ -349,6 +367,20 @@
         function eliminarTildes(texto) {
             return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         }
+
+        // Prevent accidental zoom with Ctrl + Mouse Wheel
+        window.addEventListener('wheel', function (e) {
+            if (e.ctrlKey) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+
+        // Prevent keyboard zoom shortcuts
+        window.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === '+' || e.key === '-' || e.key === '0' || e.key === '=')) {
+                e.preventDefault();
+            }
+        });
 
     </script>
 </body>
