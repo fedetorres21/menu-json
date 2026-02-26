@@ -93,9 +93,9 @@
             pointer-events: none;
         }
 
-        /* Icon sizing and transition */
-        .menu-item i,
-        .menu-item svg {
+        /* Icon sizing and transition - only for top-level icons */
+        .menu-item>i,
+        .menu-item>svg {
             font-size: 3.2em;
             width: 1em;
             height: 1em;
@@ -104,8 +104,8 @@
             display: block;
         }
 
-        /* Ensure SVGs inherit color */
-        .menu-item svg {
+        /* Ensure main SVGs inherit color */
+        .menu-item>svg {
             fill: currentColor;
         }
 
@@ -201,14 +201,21 @@
 
         /* Indicator arrow SVG styling */
         .arrow-indicator {
-            width: 1.2em;
-            height: 1.2em;
+            width: 1em;
+            height: 1em;
             margin-left: -2px;
             vertical-align: middle;
             opacity: 0.7;
             fill: currentColor;
             display: inline-block;
-            transition: width 0.3s ease, height 0.3s ease;
+            line-height: 1;
+        }
+
+        .arrow-indicator svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            fill: currentColor;
         }
 
         body.has-submenu .arrow-indicator {
