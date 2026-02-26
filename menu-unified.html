@@ -37,12 +37,15 @@
             padding: 0;
             /* High-quality system font stack for offline support */
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            font-size: 12px;
+            font-size: 11px;
+            /* Reduced from 12px to fit all items */
             height: 100vh;
             overflow: hidden;
             background-color: var(--menu-bg);
             display: flex;
             flex-direction: column;
+            letter-spacing: -0.01em;
+            /* Slight squeeze to help long words */
         }
 
         /* --- Main Menu --- */
@@ -79,7 +82,8 @@
             color: var(--menu-text);
             cursor: pointer;
             transition: all 0.2s ease;
-            padding: 5px;
+            padding: 4px 2px;
+            /* Dighter padding to save space */
             text-align: center;
             border: none;
             background: none;
@@ -102,13 +106,10 @@
         /* Icon sizing and transition */
         .menu-item i,
         .menu-item svg {
-            font-size: 3.5em;
+            font-size: 3.2em;
             width: 1em;
-            /* For SVG */
             height: 1em;
-            /* For SVG */
-            /* Large icon initially */
-            margin-bottom: 5px;
+            margin-bottom: 3px;
             transition: all 0.3s ease;
             display: block;
         }
@@ -120,10 +121,12 @@
 
         .menu-item p {
             margin: 0;
-            font-size: 1em;
-            line-height: 1.1;
+            font-size: 1.05em;
+            /* Compensate for smaller body font */
+            line-height: 1;
+            /* Tightest line height */
             white-space: normal;
-            /* Allow wrapping */
+            /* Allow wrapping if necessary */
             overflow: hidden;
             text-overflow: clip;
             max-width: 100%;
