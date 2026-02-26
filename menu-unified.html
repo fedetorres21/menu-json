@@ -62,13 +62,15 @@
         .menu-item {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
+            /* Anchor content toward top */
             align-items: center;
             text-decoration: none;
             color: var(--menu-text);
             cursor: pointer;
             transition: all 0.2s ease;
-            padding: 5px;
+            padding: 5px 2px;
+            /* Fixed top/bottom padding */
             text-align: center;
             border: none;
             background: none;
@@ -106,14 +108,15 @@
 
         .menu-item p {
             margin: 0;
-            font-size: 0.96em;
-            /* Tiny reduction to help fitting */
-            line-height: 1.1;
-            white-space: nowrap;
-            /* Force single line */
-            letter-spacing: -0.02em;
-            /* Subtle squeeze */
+            font-size: 0.9em;
+            /* Slightly smaller for better fit when 2 lines */
+            line-height: 1;
+            /* Tight line height for multiline */
+            white-space: normal;
+            /* Allow wrap */
+            word-wrap: break-word;
             max-width: 100%;
+            padding: 0 1px;
         }
 
         /* --- Submenu --- */
