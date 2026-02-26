@@ -53,27 +53,18 @@
             background-color: var(--menu-bg);
             width: 100%;
             height: 100%;
-            /* Default full height */
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
-            /* Or space-between if we want to fill */
+            justify-content: space-around;
+            /* Distribute items evenly but allow content width */
             align-items: stretch;
             transition: height 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             overflow: hidden;
         }
 
-        /* Grid layout for items to ensure equal width */
-        .navbar {
-            display: grid;
-            /* Auto-fit columns: we have 15-17 items. 
-               Using repeat(auto-fit, minmax(0, 1fr)) ensures they fill the space equally. 
-            */
-            grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-            gap: 1px;
-        }
-
         .menu-item {
+            flex: 1 1 auto;
+            min-width: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -82,8 +73,7 @@
             color: var(--menu-text);
             cursor: pointer;
             transition: all 0.2s ease;
-            padding: 4px 2px;
-            /* Dighter padding to save space */
+            padding: 4px 1px;
             text-align: center;
             border: none;
             background: none;
@@ -122,15 +112,11 @@
         .menu-item p {
             margin: 0;
             font-size: 1.05em;
-            /* Compensate for smaller body font */
             line-height: 1;
-            /* Tightest line height */
             white-space: normal;
-            /* Allow wrapping if necessary */
-            overflow: hidden;
-            text-overflow: clip;
             max-width: 100%;
             word-wrap: break-word;
+            padding: 0 1px;
         }
 
         /* --- Submenu --- */
