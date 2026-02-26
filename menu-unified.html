@@ -106,11 +106,14 @@
 
         .menu-item p {
             margin: 0;
-            font-size: 1em;
+            font-size: 0.96em;
+            /* Tiny reduction to help fitting */
             line-height: 1.1;
-            white-space: normal;
+            white-space: nowrap;
+            /* Force single line */
+            letter-spacing: -0.02em;
+            /* Subtle squeeze */
             max-width: 100%;
-            word-wrap: break-word;
         }
 
         /* --- Submenu --- */
