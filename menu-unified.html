@@ -210,11 +210,21 @@
             }
         }
 
-        /* Indicator arrow */
+        /* Indicator arrow SVG styling */
         .arrow-indicator {
-            font-size: 0.8em;
-            margin-left: 0px;
+            width: 1.2em;
+            height: 1.2em;
+            margin-left: -2px;
+            vertical-align: middle;
             opacity: 0.7;
+            fill: currentColor;
+            display: inline-block;
+            transition: width 0.3s ease, height 0.3s ease;
+        }
+
+        body.has-submenu .arrow-indicator {
+            width: 0.8em;
+            height: 0.8em;
         }
     </style>
 </head>
@@ -279,12 +289,10 @@
 
                 // Arrow if submenu exists
                 if (item.submenu && item.submenu.length > 0) {
-                    const arrow = document.createElement('i');
-                    // We use a different class or style for the arrow to not conflict with main icon styling if needed, 
-                    // but here we just append it to text or separate. 
-                    // Let's append a small span for the arrow
                     const arrowSpan = document.createElement('span');
-                    arrowSpan.className = 'ri-arrow-down-s-line arrow-indicator';
+                    arrowSpan.className = 'arrow-indicator';
+                    // Inline SVG arrow provided by user
+                    arrowSpan.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>`;
                     p.appendChild(arrowSpan);
                 }
 
