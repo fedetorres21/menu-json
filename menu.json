@@ -1,290 +1,534 @@
 [
     {
         "nombre": "Menú",
-        "icon": "ri-home-4-line",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z\"></path></svg>",
         "layoutCode": "home1",
-        "submenu": [
-        ],
-        "activo": ["home1"]
+        "submenu": [],
+        "activo": [
+            "home1"
+        ]
     },
     {
-        "nombre": "Operarios", 
+        "nombre": "Operarios",
         "layoutCode": "",
-        "icon": "ri-user-2-fill",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M11 14.0619V20H13V14.0619C16.9463 14.554 20 17.9204 20 22H4C4 17.9204 7.05369 14.554 11 14.0619ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13Z\"></path></svg>",
         "submenu": [
             {
                 "nombre": "Operarios",
                 "layoutCode": "oper1",
-                "icon": "ri-user-2-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M11 14.0619V20H13V14.0619C16.9463 14.554 20 17.9204 20 22H4C4 17.9204 7.05369 14.554 11 14.0619ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13Z\"></path></svg>"
             },
             {
                 "nombre": "Candidaturas",
                 "layoutCode": "cand7",
-                "icon": "ri-filter-2-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M14 14V20L10 22V14L4 5V3H20V5L14 14ZM6.4037 5L12 13.3944L17.5963 5H6.4037Z\"></path></svg>"
             },
             {
                 "nombre": "Convenios",
                 "layoutCode": "conv1",
-                "icon": "ri-article-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM7 6H11V10H7V6ZM7 12H17V14H7V12ZM7 16H17V18H7V16ZM13 7H17V9H13V7Z\"></path></svg>"
             }
         ],
-        "activo": ["oper1", "oper2", "oper5", "oper6", "oper7", "oper77", "oper9", "oper12", "oper13", "oper24", "oper34", "oper36", "oper16", "cand7", "cand1", "cand5", "cand6", "prgu5", "cand8", "cand2", "conv1", "conv2", "cust228", "cust234", "reho12", "reho13", "oper", "cust223", "opin2", "oper44", "oper50", "cust231", "oper37"]
-
+        "activo": [
+            "oper1",
+            "oper2",
+            "oper5",
+            "oper6",
+            "oper7",
+            "oper77",
+            "oper9",
+            "oper12",
+            "oper13",
+            "oper24",
+            "oper34",
+            "oper36",
+            "oper16",
+            "cand7",
+            "cand1",
+            "cand5",
+            "cand6",
+            "prgu5",
+            "cand8",
+            "cand2",
+            "conv1",
+            "conv2",
+            "cust228",
+            "cust234",
+            "reho12",
+            "reho13",
+            "oper",
+            "cust223",
+            "opin2",
+            "oper44",
+            "oper50",
+            "cust231",
+            "oper37"
+        ]
     },
     {
         "nombre": "Contratos",
-        "icon": "ri-file-edit-line",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M21 6.75736L19 8.75736V4H10V9H5V20H19V17.2426L21 15.2426V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5501 3 20.9932V8L9.00319 2H19.9978C20.5513 2 21 2.45531 21 2.9918V6.75736ZM21.7782 8.80761L23.1924 10.2218L15.4142 18L13.9979 17.9979L14 16.5858L21.7782 8.80761Z\"></path></svg>",
         "layoutCode": "cotr1",
-        "submenu": [
-        ],
-        "activo": ["cotr1", "cotr2", "cotr8", "cotr7", "cotr6", "cotr11", "cotr18", "cotr19", "cotr20"]
-
+        "submenu": [],
+        "activo": [
+            "cotr1",
+            "cotr2",
+            "cotr8",
+            "cotr7",
+            "cotr6",
+            "cotr11",
+            "cotr18",
+            "cotr19",
+            "cotr20"
+        ]
     },
     {
         "nombre": "Clientes",
-        "icon": "ri-team-fill",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 10C14.2091 10 16 8.20914 16 6 16 3.79086 14.2091 2 12 2 9.79086 2 8 3.79086 8 6 8 8.20914 9.79086 10 12 10ZM5.5 13C6.88071 13 8 11.8807 8 10.5 8 9.11929 6.88071 8 5.5 8 4.11929 8 3 9.11929 3 10.5 3 11.8807 4.11929 13 5.5 13ZM21 10.5C21 11.8807 19.8807 13 18.5 13 17.1193 13 16 11.8807 16 10.5 16 9.11929 17.1193 8 18.5 8 19.8807 8 21 9.11929 21 10.5ZM12 11C14.7614 11 17 13.2386 17 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5 15.9999C5 15.307 5.10067 14.6376 5.28818 14.0056L5.11864 14.0204C3.36503 14.2104 2 15.6958 2 17.4999V21.9999H5V15.9999ZM22 21.9999V17.4999C22 15.6378 20.5459 14.1153 18.7118 14.0056 18.8993 14.6376 19 15.307 19 15.9999V21.9999H22Z\"></path></svg>",
         "layoutCode": "cust1",
-        "submenu": [
-        ],
-        "activo": ["cust1", "cust7", "cust8", "cust16", "cust20", "cust9", "cust8", "cust22", "cust26", "cust28", "cust11", "cust29", "cust27", "cust2", "cust6"]
-
+        "submenu": [],
+        "activo": [
+            "cust1",
+            "cust7",
+            "cust8",
+            "cust16",
+            "cust20",
+            "cust9",
+            "cust8",
+            "cust22",
+            "cust26",
+            "cust28",
+            "cust11",
+            "cust29",
+            "cust27",
+            "cust2",
+            "cust6"
+        ]
     },
     {
-        "nombre": "Formulario", 
+        "nombre": "Formulario",
         "layoutCode": "",
-        "icon": "ri-file-list-3-line",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M19 22H5C3.34315 22 2 20.6569 2 19V3C2 2.44772 2.44772 2 3 2H17C17.5523 2 18 2.44772 18 3V15H22V19C22 20.6569 20.6569 22 19 22ZM18 17V19C18 19.5523 18.4477 20 19 20C19.5523 20 20 19.5523 20 19V17H18ZM16 20V4H4V19C4 19.5523 4.44772 20 5 20H16ZM6 7H14V9H6V7ZM6 11H14V13H6V11ZM6 15H11V17H6V15Z\"></path></svg>",
         "submenu": [
             {
                 "nombre": "Uniformes",
                 "layoutCode": "fomu2",
-                "icon": "ri-t-shirt-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M14.5135 5.00008L17.1201 2.39348C17.5106 2.00295 18.1438 2.00295 18.5343 2.39348L22.777 6.63612C23.1675 7.02664 23.1675 7.65981 22.777 8.05033L18.9988 11.8285V21.0001C18.9988 21.5524 18.5511 22.0001 17.9988 22.0001H5.9988C5.44652 22.0001 4.9988 21.5524 4.9988 21.0001V11.8285L1.22063 8.05033C0.830103 7.65981 0.830103 7.02664 1.22063 6.63612L5.46327 2.39348C5.85379 2.00295 6.48696 2.00295 6.87748 2.39348L9.48408 5.00008H14.5135Z\"></path></svg>"
             },
             {
                 "nombre": "Actividad",
                 "layoutCode": "fomu7",
-                "icon": "ri-time-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM13 12V7H11V14H17V12H13Z\"></path></svg>"
             },
             {
                 "nombre": "Registro de gastos",
                 "layoutCode": "fomu4",
-                "icon": "ri-money-euro-circle-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12.0049 22.0027C6.48204 22.0027 2.00488 17.5256 2.00488 12.0027C2.00488 6.4799 6.48204 2.00275 12.0049 2.00275C17.5277 2.00275 22.0049 6.4799 22.0049 12.0027C22.0049 17.5256 17.5277 22.0027 12.0049 22.0027ZM10.0549 11.0027C10.2865 9.86163 11.2954 9.00275 12.5049 9.00275C13.1201 9.00275 13.6834 9.22496 14.1189 9.59351L15.8198 8.45951C14.9973 7.56402 13.8166 7.00275 12.5049 7.00275C10.1886 7.00275 8.28107 8.75277 8.03235 11.0027H7.00488V13.0027H8.03235C8.28107 15.2527 10.1886 17.0027 12.5049 17.0027C13.8166 17.0027 14.9973 16.4415 15.8198 15.546L14.1188 14.412C13.6833 14.7806 13.1201 15.0027 12.5049 15.0027C11.2954 15.0027 10.2865 14.1439 10.0549 13.0027H15.0049V11.0027H10.0549Z\"></path></svg>"
             },
             {
                 "nombre": "Vacaciones",
                 "layoutCode": "fomu1",
-                "icon": "ri-suitcase-2-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M18 23H16V22H8V23H6V22H5C3.89543 22 3 21.1046 3 20V7C3 5.89543 3.89543 5 5 5H8V3C8 2.44772 8.44772 2 9 2H15C15.5523 2 16 2.44772 16 3V5H19C20.1046 5 21 5.89543 21 7V20C21 21.1046 20.1046 22 19 22H18V23ZM10 9H8V18H10V9ZM16 9H14V18H16V9ZM14 4H10V5H14V4Z\"></path></svg>"
             },
             {
                 "nombre": "Orden de trabajo",
                 "layoutCode": "fomu30",
-                "icon": "ri-drag-move-2-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M11 11V5.82843L9.17157 7.65685L7.75736 6.24264L12 2L16.2426 6.24264L14.8284 7.65685L13 5.82843V11H18.1716L16.3431 9.17157L17.7574 7.75736L22 12L17.7574 16.2426L16.3431 14.8284L18.1716 13H13V18.1716L14.8284 16.3431L16.2426 17.7574L12 22L7.75736 17.7574L9.17157 16.3431L11 18.1716V13H5.82843L7.65685 14.8284L6.24264 16.2426L2 12L6.24264 7.75736L7.65685 9.17157L5.82843 11H11Z\"></path></svg>"
             },
             {
                 "nombre": "Orden de movimiento",
                 "layoutCode": "acti9",
-                "icon": "ri-steering-2-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM8 13L4.06201 13.001C4.51365 16.6192 7.38163 19.4869 11 19.9381V16C9.34315 16 8 14.6569 8 13ZM19.938 13.001L16 13C16 14.6569 14.6569 16 13 16L13.001 19.938C16.6189 19.4864 19.4864 16.6189 19.938 13.001ZM14 12H10V13C10 13.5523 10.4477 14 11 14H13C13.5523 14 14 13.5523 14 13V12ZM12 4C7.92037 4 4.55396 7.05371 4.06189 11H8C8 10.4477 8.44772 10 9 10H15C15.5523 10 16 10.4477 16 11H19.9381C19.446 7.05371 16.0796 4 12 4Z\"></path></svg>"
             },
             {
                 "nombre": "Orden de reparación",
                 "layoutCode": "fomu51",
-                "icon": "ri-tools-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M5.32943 3.27158C6.56252 2.8332 7.9923 3.10749 8.97927 4.09446C9.96652 5.08171 10.2407 6.51202 9.80178 7.74535L20.6465 18.5902L18.5252 20.7115L7.67936 9.86709C6.44627 10.3055 5.01649 10.0312 4.02952 9.04421C3.04227 8.05696 2.7681 6.62665 3.20701 5.39332L5.44373 7.63C6.02952 8.21578 6.97927 8.21578 7.56505 7.63C8.15084 7.04421 8.15084 6.09446 7.56505 5.50868L5.32943 3.27158ZM15.6968 5.15512L18.8788 3.38736L20.293 4.80157L18.5252 7.98355L16.7574 8.3371L14.6361 10.4584L13.2219 9.04421L15.3432 6.92289L15.6968 5.15512ZM8.62572 12.9333L10.747 15.0546L5.79729 20.0044C5.2115 20.5902 4.26175 20.5902 3.67597 20.0044C3.12464 19.453 3.09221 18.5793 3.57867 17.99L3.67597 17.883L8.62572 12.9333Z\"></path></svg>"
             },
             {
                 "nombre": "Control de llaves",
                 "layoutCode": "fomu36",
-                "icon": "ri-key-2-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M10.313 11.5656L18.253 3.62561L20.3744 5.74693L18.9602 7.16114L21.0815 9.28246L17.5459 12.818L15.4246 10.6967L12.4343 13.687C13.4182 15.5719 13.1186 17.9524 11.5355 19.5355C9.58291 21.4881 6.41709 21.4881 4.46447 19.5355C2.51184 17.5829 2.51184 14.4171 4.46447 12.4644C6.04755 10.8814 8.42809 10.5818 10.313 11.5656ZM9.41421 17.4142C10.1953 16.6331 10.1953 15.3668 9.41421 14.5858C8.63316 13.8047 7.36684 13.8047 6.58579 14.5858C5.80474 15.3668 5.80474 16.6331 6.58579 17.4142C7.36684 18.1952 8.63316 18.1952 9.41421 17.4142Z\"></path></svg>"
             }
         ],
-        "activo": ["fomu2", "fomu88", "fomu222", "fomu10", "fomu7", "fomu777", "fomu778", "fomu779", "fomu16", "fomu4", "fomu45", "fomu11", "fomu1", "reho14", "vaca2", "vaca7", "fomu9", "oper45", "fomu37", "fomu30", "acti9", "fomu51", "fomu36", "fomu366", "coll2", "fomu33", "fomu333", "acti10", "reho141", "reho1411", "reho142", "reho1421", "reho143", "reho144"]
-
+        "activo": [
+            "fomu2",
+            "fomu88",
+            "fomu222",
+            "fomu10",
+            "fomu7",
+            "fomu777",
+            "fomu778",
+            "fomu779",
+            "fomu16",
+            "fomu4",
+            "fomu45",
+            "fomu11",
+            "fomu1",
+            "reho14",
+            "vaca2",
+            "vaca7",
+            "fomu9",
+            "oper45",
+            "fomu37",
+            "fomu30",
+            "acti9",
+            "fomu51",
+            "fomu36",
+            "fomu366",
+            "coll2",
+            "fomu33",
+            "fomu333",
+            "acti10",
+            "reho141",
+            "reho1411",
+            "reho142",
+            "reho1421",
+            "reho143",
+            "reho144"
+        ]
     },
     {
-        "nombre": "Facturación", 
+        "nombre": "Facturación",
         "layoutCode": "",
-        "icon": "ri-draft-line",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M20 2C20.5523 2 21 2.44772 21 3V6.757L19 8.757V4H5V20H19V17.242L21 15.242V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20ZM21.7782 8.80761L23.1924 10.2218L15.4142 18L13.9979 17.9979L14 16.5858L21.7782 8.80761ZM13 12V14H8V12H13ZM16 8V10H8V8H16Z\"></path></svg>",
         "submenu": [
             {
                 "nombre": "Contratos",
                 "layoutCode": "cocl1",
-                "icon": "ri-file-edit-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M21 6.75736L19 8.75736V4H10V9H5V20H19V17.2426L21 15.2426V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5501 3 20.9932V8L9.00319 2H19.9978C20.5513 2 21 2.45531 21 2.9918V6.75736ZM21.7782 8.80761L23.1924 10.2218L15.4142 18L13.9979 17.9979L14 16.5858L21.7782 8.80761Z\"></path></svg>"
             },
             {
                 "nombre": "Facturación",
                 "layoutCode": "sell1",
-                "icon": "ri-book-mark-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M20 22H6.5C4.567 22 3 20.433 3 18.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V17H6.5C5.67157 17 5 17.6716 5 18.5C5 19.3284 5.67157 20 6.5 20H19ZM10 4V12L13.5 10L17 12V4H10Z\"></path></svg>"
             },
             {
                 "nombre": "Notas de entrega",
                 "layoutCode": "reno1",
-                "icon": "ri-survey-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M6 4V8H18V4H20.0066C20.5552 4 21 4.44495 21 4.9934V21.0066C21 21.5552 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5551 3 21.0066V4.9934C3 4.44476 3.44495 4 3.9934 4H6ZM9 17H7V19H9V17ZM9 14H7V16H9V14ZM9 11H7V13H9V11ZM16 2V6H8V2H16Z\"></path></svg>"
             }
         ],
-        "activo": ["cocl1", "cocl9", "cocl29", "cocl2", "cocl55", "sell1", "sell2", "sell13", "invo1", "invo2", "invo11", "man1", "efec1", "reme1", "invo8", "invo6", "reno1", "reno2", "reno14", "reno8", "reno7", "reno15", "reno20", "reno9", "cocl22", "cocl23","cocl12", "cocl233"]
-
+        "activo": [
+            "cocl1",
+            "cocl9",
+            "cocl29",
+            "cocl2",
+            "cocl55",
+            "sell1",
+            "sell2",
+            "sell13",
+            "invo1",
+            "invo2",
+            "invo11",
+            "man1",
+            "efec1",
+            "reme1",
+            "invo8",
+            "invo6",
+            "reno1",
+            "reno2",
+            "reno14",
+            "reno8",
+            "reno7",
+            "reno15",
+            "reno20",
+            "reno9",
+            "cocl22",
+            "cocl23",
+            "cocl12",
+            "cocl233"
+        ]
     },
-   
     {
-        "nombre": "Almacén", 
+        "nombre": "Almacén",
         "layoutCode": "",
-        "icon": "ri-archive-fill",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M3 10H21V20.0044C21 20.5543 20.5551 21 20.0066 21H3.9934C3.44476 21 3 20.5552 3 20.0044V10ZM9 12V14H15V12H9ZM2 3.99981C2 3.44763 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44372 22 3.99981V8H2V3.99981Z\"></path></svg>",
         "submenu": [
             {
                 "nombre": "Activos",
                 "layoutCode": "acti1",
                 "fe": "0",
-                "icon": "ri-search-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z\"></path></svg>"
             },
             {
                 "nombre": "Vehículos",
                 "layoutCode": "vehi1",
                 "fe": "1",
-                "icon": "ri-car-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M19 20H5V21C5 21.5523 4.55228 22 4 22H3C2.44772 22 2 21.5523 2 21V12L4.51334 5.29775C4.80607 4.51715 5.55231 4 6.386 4H17.614C18.4477 4 19.1939 4.51715 19.4867 5.29775L22 12V21C22 21.5523 21.5523 22 21 22H20C19.4477 22 19 21.5523 19 21V20ZM4.136 12H19.864L17.614 6H6.386L4.136 12ZM6.5 17C7.32843 17 8 16.3284 8 15.5C8 14.6716 7.32843 14 6.5 14C5.67157 14 5 14.6716 5 15.5C5 16.3284 5.67157 17 6.5 17ZM17.5 17C18.3284 17 19 16.3284 19 15.5C19 14.6716 18.3284 14 17.5 14C16.6716 14 16 14.6716 16 15.5C16 16.3284 16.6716 17 17.5 17Z\"></path></svg>"
             },
             {
                 "nombre": "Almacén",
                 "layoutCode": "stor1",
-                "icon": "ri-archive-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M3 10H21V20.0044C21 20.5543 20.5551 21 20.0066 21H3.9934C3.44476 21 3 20.5552 3 20.0044V10ZM9 12V14H15V12H9ZM2 3.99981C2 3.44763 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44372 22 3.99981V8H2V3.99981Z\"></path></svg>"
             },
             {
                 "nombre": "Utensilios",
                 "layoutCode": "uten1",
-                "icon": "ri-tools-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M5.32943 3.27158C6.56252 2.8332 7.9923 3.10749 8.97927 4.09446C9.96652 5.08171 10.2407 6.51202 9.80178 7.74535L20.6465 18.5902L18.5252 20.7115L7.67936 9.86709C6.44627 10.3055 5.01649 10.0312 4.02952 9.04421C3.04227 8.05696 2.7681 6.62665 3.20701 5.39332L5.44373 7.63C6.02952 8.21578 6.97927 8.21578 7.56505 7.63C8.15084 7.04421 8.15084 6.09446 7.56505 5.50868L5.32943 3.27158ZM15.6968 5.15512L18.8788 3.38736L20.293 4.80157L18.5252 7.98355L16.7574 8.3371L14.6361 10.4584L13.2219 9.04421L15.3432 6.92289L15.6968 5.15512ZM8.62572 12.9333L10.747 15.0546L5.79729 20.0044C5.2115 20.5902 4.26175 20.5902 3.67597 20.0044C3.12464 19.453 3.09221 18.5793 3.57867 17.99L3.67597 17.883L8.62572 12.9333Z\"></path></svg>"
             },
             {
                 "nombre": "Uniformes",
                 "layoutCode": "unif1",
-                "icon": "ri-t-shirt-2-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M20.998 3C21.5503 3 21.998 3.44772 21.998 4V11C21.998 11.5523 21.5503 12 20.998 12H18.997L18.998 20C18.998 20.5523 18.5503 21 17.998 21H5.99805C5.44576 21 4.99805 20.5523 4.99805 20L4.99705 11.999L2.99805 12C2.44576 12 1.99805 11.5523 1.99805 11V4C1.99805 3.44772 2.44576 3 2.99805 3H8.99805C8.99805 4.65685 10.3412 6 11.998 6C13.6549 6 14.998 4.65685 14.998 3H20.998Z\"></path></svg>"
             },
             {
                 "nombre": "Piezas de recambio",
                 "layoutCode": "reca1",
-                "icon": "ri-settings-6-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M17.5 2.47363L23 11.9999L17.5 21.5262H6.5L1 11.9999L6.5 2.47363H17.5ZM16.3453 4.47363H7.6547L3.3094 11.9999L7.6547 19.5262H16.3453L20.6906 11.9999L16.3453 4.47363ZM8.63398 8.16979L10.366 7.16979L15.366 15.83L13.634 16.83L8.63398 8.16979Z\"></path></svg>"
             },
             {
                 "nombre": "Productos",
                 "layoutCode": "prod1",
-                "icon": "ri-dropbox-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M17.2847 10.6683L22.5 13.9909L17.248 17.3368L12 13.9934L6.75198 17.3368L1.5 13.9909L6.7152 10.6684L1.5 7.34587L6.75206 4L11.9999 7.34335L17.2481 4L22.5 7.34587L17.2847 10.6683ZM17.2112 10.6684L11.9999 7.3484L6.78869 10.6683L12 13.9883L17.2112 10.6684ZM6.78574 18.4456L12.0377 15.1L17.2898 18.4456L12.0377 21.7916L6.78574 18.4456Z\"></path></svg>"
             }
         ],
-        "activo": ["acti1", "acti6", "acti7", "acti30", "acti31", "acti2", "stor1", "stor4", "stor2", "inve1", "acti29", "invw1", "uten1", "uten2", "unif1", "unif2", "reca1", "reca2", "reca4", "prod1", "prod4", "prod2", "prod7", "prod5", "prod6", "prod8", "prod9", "vehi1", "vehi30", "vehi31", "vehi7", "vehi6", "vehi2", "vehi28", "vehi26", "vehi32"]
-
+        "activo": [
+            "acti1",
+            "acti6",
+            "acti7",
+            "acti30",
+            "acti31",
+            "acti2",
+            "stor1",
+            "stor4",
+            "stor2",
+            "inve1",
+            "acti29",
+            "invw1",
+            "uten1",
+            "uten2",
+            "unif1",
+            "unif2",
+            "reca1",
+            "reca2",
+            "reca4",
+            "prod1",
+            "prod4",
+            "prod2",
+            "prod7",
+            "prod5",
+            "prod6",
+            "prod8",
+            "prod9",
+            "vehi1",
+            "vehi30",
+            "vehi31",
+            "vehi7",
+            "vehi6",
+            "vehi2",
+            "vehi28",
+            "vehi26",
+            "vehi32"
+        ]
     },
     {
-        "nombre": "Servicios", 
+        "nombre": "Servicios",
         "layoutCode": "",
-        "icon": "ri-grid-fill",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M14 10V14H10V10H14ZM16 10H21V14H16V10ZM14 21H10V16H14V21ZM16 21V16H21V20C21 20.5523 20.5523 21 20 21H16ZM14 3V8H10V3H14ZM16 3H20C20.5523 3 21 3.44772 21 4V8H16V3ZM8 10V14H3V10H8ZM8 21H4C3.44772 21 3 20.5523 3 20V16H8V21ZM8 3V8H3V4C3 3.44772 3.44772 3 4 3H8Z\"></path></svg>",
         "submenu": [
             {
                 "nombre": "Tarifas",
                 "layoutCode": "tari1",
-                "icon": "ri-money-euro-box-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M3.00488 3.00275H21.0049C21.5572 3.00275 22.0049 3.45046 22.0049 4.00275V20.0027C22.0049 20.555 21.5572 21.0027 21.0049 21.0027H3.00488C2.4526 21.0027 2.00488 20.555 2.00488 20.0027V4.00275C2.00488 3.45046 2.4526 3.00275 3.00488 3.00275ZM10.0549 11.0027C10.2865 9.86163 11.2954 9.00275 12.5049 9.00275C13.1201 9.00275 13.6834 9.22496 14.1189 9.59351L15.8198 8.45951C14.9973 7.56402 13.8166 7.00275 12.5049 7.00275C10.1886 7.00275 8.28107 8.75277 8.03235 11.0027H7.00488V13.0027H8.03235C8.28107 15.2527 10.1886 17.0027 12.5049 17.0027C13.8166 17.0027 14.9973 16.4415 15.8198 15.546L14.1188 14.412C13.6833 14.7806 13.1201 15.0027 12.5049 15.0027C11.2954 15.0027 10.2865 14.1439 10.0549 13.0027H15.0049V11.0027H10.0549Z\"></path></svg>"
             },
             {
                 "nombre": "Solicitud presupuestos",
                 "layoutCode": "sopr1",
-                "icon": "ri-question-answer-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M8 18H18.2372L20 19.3851V9H21C21.5523 9 22 9.44772 22 10V23.5L17.5455 20H9C8.44772 20 8 19.5523 8 19V18ZM5.45455 16L1 19.5V4C1 3.44772 1.44772 3 2 3H17C17.5523 3 18 3.44772 18 4V16H5.45455Z\"></path></svg>"
             },
             {
                 "nombre": "Presupuestos",
                 "layoutCode": "esti14",
-                "icon": "ri-article-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM7 6H11V10H7V6ZM7 12H17V14H7V12ZM7 16H17V18H7V16ZM13 7H17V9H13V7Z\"></path></svg>"
             },
             {
                 "nombre": "Servicios",
                 "layoutCode": "cris1",
-                "icon": "ri-grid-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M14 10V14H10V10H14ZM16 10H21V14H16V10ZM14 21H10V16H14V21ZM16 21V16H21V20C21 20.5523 20.5523 21 20 21H16ZM14 3V8H10V3H14ZM16 3H20C20.5523 3 21 3.44772 21 4V8H16V3ZM8 10V14H3V10H8ZM8 21H4C3.44772 21 3 20.5523 3 20V16H8V21ZM8 3V8H3V4C3 3.44772 3.44772 3 4 3H8Z\"></path></svg>"
             }
         ],
-        "activo": ["cris1", "cris9", "cris18", "cris6", "cris7", "cris8", "cris12", "cris10", "cris11", "cris21", "cris2", "cris24", "cris25", "cris26", "cris27", "cris28", "cris29", "cris30", "cris31", "cris32", "cris34", "tari1", "tari2", "sopr1", "sopr2", "sopr7", "sopr6", "sopr8", "sopr9", "sopr10", "sopr4", "sopr13", "sopr14", "sopr17", "esti4", "esti1", "esti2", "esti5", "esti6", "prgu1", "esti12", "esti11", "esti10", "esti9", "esti8", "esti7", "esti14"]
-
+        "activo": [
+            "cris1",
+            "cris9",
+            "cris18",
+            "cris6",
+            "cris7",
+            "cris8",
+            "cris12",
+            "cris10",
+            "cris11",
+            "cris21",
+            "cris2",
+            "cris24",
+            "cris25",
+            "cris26",
+            "cris27",
+            "cris28",
+            "cris29",
+            "cris30",
+            "cris31",
+            "cris32",
+            "cris34",
+            "tari1",
+            "tari2",
+            "sopr1",
+            "sopr2",
+            "sopr7",
+            "sopr6",
+            "sopr8",
+            "sopr9",
+            "sopr10",
+            "sopr4",
+            "sopr13",
+            "sopr14",
+            "sopr17",
+            "esti4",
+            "esti1",
+            "esti2",
+            "esti5",
+            "esti6",
+            "prgu1",
+            "esti12",
+            "esti11",
+            "esti10",
+            "esti9",
+            "esti8",
+            "esti7",
+            "esti14"
+        ]
     },
     {
         "nombre": "Calidad",
-        "icon": "ri-search-line",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z\"></path></svg>",
         "layoutCode": "cali1",
-        "submenu": [
-        ],
-        "activo": ["cali6", "cali7", "cali8", "cali11", "cali9", "cali10", "fomu31", "cali21", "cali1", "fomu77777", "fomu16", "cali5", "cali2", "cali24", "cali44"]
-
+        "submenu": [],
+        "activo": [
+            "cali6",
+            "cali7",
+            "cali8",
+            "cali11",
+            "cali9",
+            "cali10",
+            "fomu31",
+            "cali21",
+            "cali1",
+            "fomu77777",
+            "fomu16",
+            "cali5",
+            "cali2",
+            "cali24",
+            "cali44"
+        ]
     },
     {
-        "nombre": "Compras", 
+        "nombre": "Compras",
         "layoutCode": "",
-        "icon": "ri-truck-line",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M8.96456 18C8.72194 19.6961 7.26324 21 5.5 21C3.73676 21 2.27806 19.6961 2.03544 18H1V6C1 5.44772 1.44772 5 2 5H16C16.5523 5 17 5.44772 17 6V8H20L23 12.0557V18H20.9646C20.7219 19.6961 19.2632 21 17.5 21C15.7368 21 14.2781 19.6961 14.0354 18H8.96456ZM15 7H3V15.0505C3.63526 14.4022 4.52066 14 5.5 14C6.8962 14 8.10145 14.8175 8.66318 16H14.3368C14.5045 15.647 14.7296 15.3264 15 15.0505V7ZM17 13H21V12.715L18.9917 10H17V13ZM17.5 19C18.1531 19 18.7087 18.5826 18.9146 18C18.9699 17.8436 19 17.6753 19 17.5C19 16.6716 18.3284 16 17.5 16C16.6716 16 16 16.6716 16 17.5C16 17.6753 16.0301 17.8436 16.0854 18C16.2913 18.5826 16.8469 19 17.5 19ZM7 17.5C7 16.6716 6.32843 16 5.5 16C4.67157 16 4 16.6716 4 17.5C4 17.6753 4.03008 17.8436 4.08535 18C4.29127 18.5826 4.84689 19 5.5 19C6.15311 19 6.70873 18.5826 6.91465 18C6.96992 17.8436 7 17.6753 7 17.5Z\"></path></svg>",
         "submenu": [
             {
                 "nombre": "Proveedores",
                 "layoutCode": "supp1",
-                "icon": "ri-filter-3-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M10 18H14V16H10V18ZM3 6V8H21V6H3ZM6 13H18V11H6V13Z\"></path></svg>"
             },
             {
                 "nombre": "Pedidos de compra",
                 "layoutCode": "buyo1",
-                "icon": "ri-shopping-cart-2-fill"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z\"></path></svg>"
             },
             {
                 "nombre": "Hoja de encargo",
                 "layoutCode": "subc1",
-                "icon": "ri-file-list-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM19 20V4H5V20H19ZM8 7H16V9H8V7ZM8 11H16V13H8V11ZM8 15H16V17H8V15Z\"></path></svg>"
             }
         ],
-        "activo": ["buyo13", "buyo6", "buyo1", "buyo2", "subc1", "subc2", "subc4","supp2", "supp1", "supp8", "supp9"]
-
+        "activo": [
+            "buyo13",
+            "buyo6",
+            "buyo1",
+            "buyo2",
+            "subc1",
+            "subc2",
+            "subc4",
+            "supp2",
+            "supp1",
+            "supp8",
+            "supp9"
+        ]
     },
     {
-        "nombre": "Prog. Trabajo", 
+        "nombre": "Prog. Trabajo",
         "layoutCode": "",
-        "icon": "ri-calendar-check-fill",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 8H4V19H20V8ZM15.0355 10.136L16.4497 11.5503L11.5 16.5L7.96447 12.9645L9.37868 11.5503L11.5 13.6716L15.0355 10.136Z\"></path></svg>",
         "submenu": [
             {
                 "nombre": "Prog. Trabajo",
                 "layoutCode": "cris19",
-                "icon": "ri-microsoft-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M11.001 5H5.00098V11H11.001V5ZM13.001 5V11H19.001V5H13.001ZM19.001 13H13.001V19H19.001V13ZM11.001 19V13H5.00098V19H11.001ZM3.00098 3H21.001V21H3.00098V3Z\"></path></svg>"
             },
             {
                 "nombre": "Cuadrantes",
                 "layoutCode": "cuad12",
-                "icon": "ri-calendar-2-line"
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z\"></path></svg>"
             }
         ],
-        "activo": ["fomu89", "cris19", "fomu52", "fomu15", "cuad12"]
-
+        "activo": [
+            "fomu89",
+            "cris19",
+            "fomu52",
+            "fomu15",
+            "cuad12"
+        ]
     },
     {
         "nombre": "Comunicados",
         "layoutCode": "comu1",
-        "icon": "ri-mail-send-fill",
-        "submenu": [
-        ],
-        "activo": ["comu1", "comu2", "comu4", "comu5", "comu11", "comu6", "comu7"]
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M2 5.5V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V19H20V7.3L12 14.5L2 5.5ZM0 10H5V12H0V10ZM0 15H8V17H0V15Z\"></path></svg>",
+        "submenu": [],
+        "activo": [
+            "comu1",
+            "comu2",
+            "comu4",
+            "comu5",
+            "comu11",
+            "comu6",
+            "comu7"
+        ]
     },
     {
         "nombre": "Contactos",
-        "icon": "ri-contacts-book-line",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M3 2H19.0049C20.1068 2 21 2.89821 21 3.9908V20.0092C21 21.1087 20.1074 22 19.0049 22H3V2ZM7 4H5V20H7V4ZM9 20H19V4H9V20ZM11 16C11 14.3431 12.3431 13 14 13C15.6569 13 17 14.3431 17 16H11ZM14 12C12.8954 12 12 11.1046 12 10C12 8.89543 12.8954 8 14 8C15.1046 8 16 8.89543 16 10C16 11.1046 15.1046 12 14 12ZM22 6H24V10H22V6ZM22 12H24V16H22V12Z\"></path></svg>",
         "layoutCode": "cont1",
-        "submenu": [
-        ],
-        "activo": ["cont1", "cont2"]
-
+        "submenu": [],
+        "activo": [
+            "cont1",
+            "cont2"
+        ]
     },
- {
-        "nombre": "Cuadro de mando", 
+    {
+        "nombre": "Cuadro de mando",
         "layoutCode": "cocl666",
-        "icon": "ri-funds-box-line",
-        "submenu": [
-            
-        ],
-        "activo": [ "cocl6", "cocl11", "cocl7"]
-
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M4.00488 5.00281V19.0028H20.0049V5.00281H4.00488ZM3.00488 3.00281H21.0049C21.5572 3.00281 22.0049 3.45052 22.0049 4.00281V20.0028C22.0049 20.5551 21.5572 21.0028 21.0049 21.0028H3.00488C2.4526 21.0028 2.00488 20.5551 2.00488 20.0028V4.00281C2.00488 3.45052 2.4526 3.00281 3.00488 3.00281ZM14.7978 9.7957L13.0049 8.00281H18.0049V13.0028L16.212 11.2099L12.348 15.0739L10.2267 12.9526L7.39828 15.781L5.98407 14.3668L10.2267 10.1241L12.348 12.2454L14.7978 9.7957Z\"></path></svg>",
+        "submenu": [],
+        "activo": [
+            "cocl6",
+            "cocl11",
+            "cocl7"
+        ]
     },
-    
     {
         "nombre": "Preferencias",
-        "icon": "ri-settings-2-fill",
+"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M8.68637 4.00008L11.293 1.39348C11.6835 1.00295 12.3167 1.00295 12.7072 1.39348L15.3138 4.00008H19.0001C19.5524 4.00008 20.0001 4.4478 20.0001 5.00008V8.68637L22.6067 11.293C22.9972 11.6835 22.9972 12.3167 22.6067 12.7072L20.0001 15.3138V19.0001C20.0001 19.5524 19.5524 20.0001 19.0001 20.0001H15.3138L12.7072 22.6067C12.3167 22.9972 11.6835 22.9972 11.293 22.6067L8.68637 20.0001H5.00008C4.4478 20.0001 4.00008 19.5524 4.00008 19.0001V15.3138L1.39348 12.7072C1.00295 12.3167 1.00295 11.6835 1.39348 11.293L4.00008 8.68637V5.00008C4.00008 4.4478 4.4478 4.00008 5.00008 4.00008H8.68637ZM12.0001 15.0001C13.6569 15.0001 15.0001 13.6569 15.0001 12.0001C15.0001 10.3432 13.6569 9.00008 12.0001 9.00008C10.3432 9.00008 9.00008 10.3432 9.00008 12.0001C9.00008 13.6569 10.3432 15.0001 12.0001 15.0001Z\"></path></svg>",
         "layoutCode": "usrs1",
-        "submenu": [
-        ],
-        "activo": ["usrs1", "usrs2", "usrs4", "usrs5", "usrs6", "usrs7", "usur1"]
-
+        "submenu": [],
+        "activo": [
+            "usrs1",
+            "usrs2",
+            "usrs4",
+            "usrs5",
+            "usrs6",
+            "usrs7",
+            "usur1"
+        ]
     }
 ]

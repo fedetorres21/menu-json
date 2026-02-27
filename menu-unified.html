@@ -5,422 +5,309 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-    <title>Menu Unified</title>
-    <!-- No external CDNs for offline support -->
-
+    <title>Menu IGM</title>
+    <!-- Removed all external CDNs for offline support -->
     <style>
         :root {
-            --menu-bg: #EDF2F4;
-            --menu-text: #5D9CC4;
-            --menu-active-bg: #5D9CC4;
-            --menu-active-text: #ffffff;
-            --submenu-bg: #f9f9f9;
-            --submenu-text: #5f788f;
-            --submenu-hover-bg: #5D9CC4;
-            --submenu-hover-text: #ffffff;
-            --disabled-bg: #EDF2F4;
-            --disabled-text: #7F7F7F;
-
-            /* Dimensions */
-            --total-height: 100vh;
-            /* Will map to the 80pt web viewer height */
-        }
-
-        * {
-            box-sizing: border-box;
-            user-select: none;
-            /* Prevent text selection feeling like a web page */
+            --menu-primary: #EDF2F4;
+            --menu-font-primary: #5D9CC4;
+            --menu-secondary: #5D9CC4;
+            --menu-font-secondary: #fff;
+            --menu-disabled: #EDF2F4;
+            --menu-font-disabled: #7F7F7F;
+            --submenu-primary: #e4e5e5;
+            --submenu-font-primary: #5f788f;
+            --submenu-secondary: #5D9CC4;
+            --submenu-font-secondary: #ffffff;
         }
 
         body {
-            margin: 0;
-            padding: 0;
-            /* High-quality system font stack for offline support */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             font-size: 12px;
-            height: 100vh;
-            overflow: hidden;
-            background-color: var(--menu-bg);
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* --- Main Menu --- */
-        .navbar {
-            background-color: var(--menu-bg);
-            width: 100%;
-            height: 100%;
-            display: grid;
-            /* Uniform column width distribution */
-            grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-            gap: 1px;
-            align-items: stretch;
-            transition: height 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            overflow: hidden;
-        }
-
-        .menu-item {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            /* Anchor content toward top */
-            align-items: center;
-            text-decoration: none;
-            color: var(--menu-text);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            padding: 5px 2px;
-            /* Fixed top/bottom padding */
-            text-align: center;
-            border: none;
-            background: none;
-            outline: none;
-            position: relative;
-        }
-
-        .menu-item:hover,
-        .menu-item.active {
-            background-color: var(--menu-active-bg);
-            color: var(--menu-active-text);
-        }
-
-        .menu-item.disabled {
-            color: var(--disabled-text);
-            cursor: default;
-            pointer-events: none;
-        }
-
-        /* Icon sizing and transition - only for top-level icons */
-        .menu-item>i,
-        .menu-item>svg {
-            font-size: 3.5em;
-            width: 1em;
-            height: 1em;
-            margin-bottom: 5px;
-            transition: all 0.3s ease;
-            display: block;
-        }
-
-        /* Ensure main SVGs inherit color */
-        .menu-item>svg {
-            fill: currentColor;
-        }
-
-        .menu-item p {
+            letter-spacing: -0.01em;
+            /* Using system font stack to mimic Nunito Sans offline */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
-            font-size: 0.9em;
-            /* Slightly smaller for better fit when 2 lines */
-            line-height: 1;
-            /* Tight line height for multiline */
-            white-space: normal;
-            /* Allow wrap */
-            word-wrap: break-word;
-            max-width: 100%;
-            padding: 0 1px;
-        }
-
-        /* --- Submenu --- */
-        .submenubar {
-            height: 0;
-            /* Hidden by default */
-            background-color: var(--submenu-bg);
-            overflow: hidden;
-            transition: height 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            display: flex;
-            flex-direction: row;
-            align-items: stretch;
             padding: 0;
-            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+            overflow-y: hidden;
         }
 
-        .submenu-item {
-            display: flex;
-            align-items: center;
-            padding: 0 16px;
+        .active {
+            background-color: var(--menu-secondary);
+            color: var(--menu-font-secondary) !important;
+        }
+
+        .disabled {
+            background-color: var(--menu-disabled);
+            color: var(--menu-font-disabled) !important;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: var(--menu-primary);
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            height: 80px;
+            grid-gap: 1px;
+            justify-content: start;
+            align-content: space-evenly;
+            -webkit-transition: width 200ms ease-in-out, height 200ms ease-in-out;
+        }
+
+        .submenubar {
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+
+        .navbar a {
+            float: left;
+            color: var(--menu-font-primary);
+            text-align: center;
+            padding: 9px 1px;
             text-decoration: none;
-            color: var(--submenu-text);
             cursor: pointer;
-            border-radius: 0;
-            margin-right: 0;
-            transition: background-color 0.2s;
-            white-space: nowrap;
         }
 
-        .submenu-item:hover {
-            background-color: var(--submenu-hover-bg);
-            color: var(--submenu-hover-text);
+        .submenubar a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 12px 16px;
+            text-decoration: none;
         }
 
-        .submenu-item i,
-        .submenu-item svg {
-            margin-right: 6px;
-            font-size: 1.2em;
-            width: 1em;
-            height: 1em;
-            fill: currentColor;
+        .navbar a:hover {
+            background-color: var(--menu-secondary);
+            color: var(--menu-font-secondary);
+            cursor: pointer;
         }
 
-        /* --- State: Has Submenu Active --- */
-        /* When a submenu is open, we split the height 50/50 */
-        body.has-submenu .navbar {
-            height: 50%;
+        .hover-disabled:hover {
+            background-color: var(--menu-disabled) !important;
         }
 
-        body.has-submenu .submenubar {
-            height: 50%;
-        }
-
-        /* Shrink icons when in split mode */
-        body.has-submenu .menu-item i,
-        body.has-submenu .menu-item svg {
-            font-size: 1.2em;
-            /* Smaller to fit 2 lines of text */
-            margin-bottom: 0;
-        }
-
-        body.has-submenu .menu-item {
-            padding: 2px;
-        }
-
-        /* --- Anti-Zoom / Scaling Fixes for Windows WebViewer --- */
-        html,
-        body {
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-            zoom: 1 !important;
-        }
-
-        @media screen and (min-width: 0\0) {
-
-            /* Targeting IE/Edge-based WebViewer specifically */
-            @-ms-viewport {
-                width: device-width;
-                zoom: 1;
-            }
-        }
-
-        /* Indicator arrow SVG styling */
-        .arrow-indicator {
-            width: 1em;
-            height: 1em;
-            margin-left: -2px;
-            vertical-align: middle;
-            opacity: 0.7;
-            fill: currentColor;
-            display: inline-block;
-            line-height: 1;
-        }
-
-        .arrow-indicator svg {
+        .dropdown-content {
+            display: none;
+            background-color: var(--submenu-font-primary);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
             width: 100%;
-            height: 100%;
-            display: block;
-            fill: currentColor;
         }
 
-        body.has-submenu .arrow-indicator {
-            width: 0.8em;
-            height: 0.8em;
+        .dropdown-content a {
+            color: var(--submenu-font-secondary);
+            padding: 8px 8px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .dropdown-content p {
+            padding-left: 0.5em;
+        }
+
+        .dropdown-content a:hover {
+            background-color: var(--submenu-secondary);
+            color: var(--submenu-font-secondary);
+            cursor: pointer
+        }
+
+        .hcuarentayuno {
+            height: 45px;
+        }
+
+        .grp a {
+            display: grid;
+        }
+
+        /* SVG and Icon styling matching the original font-icon feel */
+        .grp svg,
+        .grp i {
+            transition: all .2s;
+            margin: 0 auto;
+            fill: currentColor;
+            display: block;
+        }
+
+        p {
+            margin: 0;
+            line-height: 0.9em;
+        }
+
+        .submenu-icon {
+            vertical-align: middle;
+            width: 1em;
+            height: 1em;
+            display: inline-block !important;
+            /* margin-left: 2px; */
+        }
+
+        /* Prevent text selection */
+        * {
+            user-select: none;
+            -webkit-user-select: none;
         }
     </style>
 </head>
 
 <body>
-
-    <div id="navbar" class="navbar">
-        <!-- Menu items injected here -->
+    <div id='grp' class='grp'>
+        <div id='img' class='navbar'>
+        </div>
     </div>
-
-    <div id="submenubar" class="submenubar">
-        <!-- Submenu items injected here -->
+    <div id='submenubar' class='submenubar'>
     </div>
 
     <script>
-        // Data Source
         var json_menu = __JSON_MENU__;
-
-        // --- Logic ---
-
-        let currentActiveMenuIndex = -1;
 
         window.onload = function () {
             renderMenu();
-            // FileMaker substitution string
-            active("__LAYOUT_CODE__");
+            active('__LAYOUT_CODE__');
         };
 
         function renderMenu() {
-            const navbar = document.getElementById('navbar');
-            navbar.innerHTML = '';
+            let menu_html = ''
+            let submenu_html = ''
+            let count = 0;
 
-            json_menu.forEach((item, index) => {
-                const el = document.createElement('div');
-                el.className = 'menu-item';
-                el.setAttribute('data-index', index);
-                el.setAttribute('name', eliminarTildes(item.nombre)); // For active() lookup
+            if (!json_menu || !Array.isArray(json_menu)) return;
 
-                if (item.disabled) {
-                    el.classList.add('disabled');
-                }
+            const arrowIcon = `<svg class="submenu-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 15.5L6 9.5L7.41 8.09L12 12.67L16.59 8.09L18 9.5L12 15.5Z"></path></svg>`;
 
-                // Click handler
-                el.onclick = () => handleMenuClick(index);
-
-                // Icon / SVG check
-                const iconContainer = document.createElement('div');
-                if (item.icon && item.icon.trim().startsWith('<svg')) {
-                    iconContainer.innerHTML = item.icon;
+            json_menu.forEach(e => {
+                let iconContent = e.icon;
+                if (!iconContent || !iconContent.trim().startsWith('<svg')) {
+                    iconContent = `<i class="${e.icon || ''} icon-main"></i>`;
                 } else {
-                    const icon = document.createElement('i');
-                    icon.className = item.icon;
-                    iconContainer.appendChild(icon);
-                }
-                // Maintain the class for transition selection if needed, 
-                // but let's just append the children to el
-                Array.from(iconContainer.children).forEach(child => el.appendChild(child));
-
-                // Label
-                const p = document.createElement('p');
-                p.textContent = item.nombre;
-
-                // Arrow if submenu exists
-                if (item.submenu && item.submenu.length > 0) {
-                    const arrowSpan = document.createElement('span');
-                    arrowSpan.className = 'arrow-indicator';
-                    // Inline SVG arrow provided by user
-                    arrowSpan.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>`;
-                    p.appendChild(arrowSpan);
+                    // Wrap SVG and ensure it has the icon-main class for selection
+                    iconContent = iconContent.replace('<svg ', '<svg class="icon-main" ');
                 }
 
-                el.appendChild(p);
-                navbar.appendChild(el);
+                const nameClean = eliminarTildes(e.nombre);
+
+                if (e.submenu && e.submenu.length > 0) {
+                    if (e.disabled) {
+                        menu_html += `<a class='disabled hover-disabled' name="${nameClean}" layout="${e.layoutCode}">${iconContent}<p>${e.nombre}</p></a>`
+                    } else {
+                        menu_html += `<a id="menu-submenu${count}" onclick="submenu(${count})" name="${nameClean}" layout="${e.layoutCode}">${iconContent}<p>${e.nombre}${arrowIcon}</p></a>`
+                    }
+
+                    let sub_a = ''
+                    e.submenu.forEach(a => {
+                        let i = (a.fe === void 0) ? a.layoutCode : a.layoutCode + "|" + a.fe;
+
+                        let subIcon = a.icon;
+                        if (!subIcon || !subIcon.trim().startsWith('<svg')) {
+                            subIcon = `<i style="vertical-align: middle;" class='${a.icon || ''}'></i>`;
+                        } else {
+                            subIcon = subIcon.replace('<svg ', '<svg style="width: 1.2em; height: 1.2em; vertical-align: middle;" ');
+                        }
+
+                        if (a.disabled) {
+                            sub_a += `<a class='disabled hover-disabled'>${subIcon}<p style="display: inline;">${a.nombre}</p></a>`
+                        } else {
+                            sub_a += `<a onclick="goToLayout('${i}')">${subIcon}<p style="display: inline;">${a.nombre}</p></a>`
+                        }
+                    });
+                    submenu_html += `<div id='submenu${count}' class='dropdown-content'>${sub_a}</div>`
+                    count++
+                } else {
+                    if (e.disabled) {
+                        menu_html += `<a class='disabled hover-disabled' name="${nameClean}" layout="${e.layoutCode}">${iconContent}<p>${e.nombre}</p></a>`
+                    } else {
+                        menu_html += `<a onclick="goToLayout('${e.layoutCode}')" name="${nameClean}" layout="${e.layoutCode}">${iconContent}<p>${e.nombre}</p></a>`
+                    }
+                }
+            });
+
+            document.getElementById('img').innerHTML = menu_html;
+            document.getElementById('submenubar').innerHTML = submenu_html;
+
+            updateIconSize(false);
+        }
+
+        function updateIconSize(isSmall) {
+            const mainIcons = document.querySelectorAll('.icon-main');
+            const mainSize = isSmall ? '1.2em' : '3.5em'; // Using 3.5em to avoid overcrowding observed in 4em SVGs
+
+            mainIcons.forEach(el => {
+                if (el.tagName.toLowerCase() === 'svg') {
+                    el.style.width = mainSize;
+                    el.style.height = mainSize;
+                } else {
+                    el.style.fontSize = mainSize;
+                }
+            });
+
+            const arrows = document.querySelectorAll('.submenu-icon');
+            arrows.forEach(el => {
+                el.style.fontSize = isSmall ? '1.2em' : '1.4em';
             });
         }
 
-        function handleMenuClick(index) {
-            const item = json_menu[index];
+        function submenu(a) {
+            var elms = document.querySelectorAll('div[style*="display: block"]');
+            var drop = document.getElementById('submenu' + a);
+            var navbar = document.getElementById('img');
+            var nava = document.getElementById('img');
 
-            // If it has a submenu, toggle it
-            if (item.submenu && item.submenu.length > 0) {
-                toggleSubmenu(index);
+            if (elms.length > 0) {
+                var sid = elms[0].id;
+                if (sid == 'submenu' + a) {
+                    elms[0].style.display = 'none';
+                    navbar.classList.remove('hcuarentayuno');
+                    nava.childNodes.forEach(element => {
+                        if (element.style) element.style.padding = '9px 1px';
+                    });
+                    updateIconSize(false);
+                } else {
+                    // Close other and open this
+                    elms[0].style.display = 'none';
+                    drop.style.display = 'block';
+                }
             } else {
-                // Direct action
-                closeSubmenu();
-                goToLayout(item.layoutCode);
+                navbar.classList.add('hcuarentayuno');
+                drop.style.display = 'block';
+                nava.childNodes.forEach(element => {
+                    if (element.style) element.style.padding = '4px 1px';
+                });
+                updateIconSize(true);
             }
-        }
-
-        function toggleSubmenu(index) {
-            const body = document.body;
-            const submenubar = document.getElementById('submenubar');
-
-            // If clicking the same open menu, close it
-            if (currentActiveMenuIndex === index && body.classList.contains('has-submenu')) {
-                closeSubmenu();
-                return;
-            }
-
-            // Open/Switch submenu
-            currentActiveMenuIndex = index;
-            body.classList.add('has-submenu');
-
-            // Render submenu items
-            renderSubmenuItems(json_menu[index].submenu);
-        }
-
-        function closeSubmenu() {
-            document.body.classList.remove('has-submenu');
-            currentActiveMenuIndex = -1;
-            // Optional: Clear submenu content after transition to avoid popping, 
-            // but keeping it is fine as it's hidden by height: 0
-        }
-
-        function renderSubmenuItems(submenuItems) {
-            const container = document.getElementById('submenubar');
-            container.innerHTML = '';
-
-            submenuItems.forEach(sub => {
-                const el = document.createElement('div');
-                el.className = 'submenu-item';
-
-                if (sub.disabled) {
-                    el.style.opacity = '0.5';
-                    el.style.cursor = 'default';
-                } else {
-                    let code = sub.layoutCode;
-                    if (sub.fe !== undefined) {
-                        code += "|" + sub.fe;
-                    }
-                    el.onclick = () => goToLayout(code);
-                }
-
-                if (sub.icon && sub.icon.trim().startsWith('<svg')) {
-                    const svgWrapper = document.createElement('div');
-                    svgWrapper.style.display = 'flex';
-                    svgWrapper.style.alignItems = 'center';
-                    svgWrapper.style.marginRight = '6px';
-                    svgWrapper.innerHTML = sub.icon;
-                    const svg = svgWrapper.querySelector('svg');
-                    if (svg) {
-                        svg.style.width = '1.2em';
-                        svg.style.height = '1.2em';
-                        svg.style.fill = 'currentColor';
-                    }
-                    el.appendChild(svgWrapper);
-                } else {
-                    const icon = document.createElement('i');
-                    icon.className = sub.icon;
-                    el.appendChild(icon);
-                }
-
-                const text = document.createElement('span');
-                text.textContent = sub.nombre;
-                el.appendChild(text);
-
-                container.appendChild(el);
-            });
         }
 
         function goToLayout(code) {
-            console.log("Go to layout:", code);
             if (window.FileMaker) {
-                FileMaker.PerformScript("pruebaMenuJS", code);
+                FileMaker.PerformScript('pruebaMenuJS', code);
+            } else {
+                console.log("Go to layout:", code);
             }
         }
 
         function active(layoutCode) {
-            // Remove active class from all
-            document.querySelectorAll('.menu-item').forEach(el => el.classList.remove('active'));
-
-            // Find which menu item owns this layoutCode
-            const foundIndex = json_menu.findIndex(m => m.activo && m.activo.includes(layoutCode));
-
-            if (foundIndex !== -1) {
-                const item = json_menu[foundIndex];
-                const name = eliminarTildes(item.nombre);
-                const el = document.querySelector(`.menu-item[name="${name}"]`);
+            document.querySelectorAll('.navbar a').forEach(el => el.classList.remove('active'));
+            if (!json_menu) return;
+            const match = json_menu.find(m => m.activo && m.activo.includes(layoutCode));
+            if (match) {
+                const el = document.getElementsByName(eliminarTildes(match.nombre))[0];
                 if (el) el.classList.add('active');
             }
         }
 
         function eliminarTildes(texto) {
-            return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            if (!texto) return "";
+            return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
         }
 
-        // Prevent accidental zoom with Ctrl + Mouse Wheel
         window.addEventListener('wheel', function (e) {
-            if (e.ctrlKey) {
-                e.preventDefault();
-            }
+            if (e.ctrlKey) e.preventDefault();
         }, { passive: false });
 
-        // Prevent keyboard zoom shortcuts
         window.addEventListener('keydown', function (e) {
             if (e.ctrlKey && (e.key === '+' || e.key === '-' || e.key === '0' || e.key === '=')) {
                 e.preventDefault();
             }
         });
-
     </script>
 </body>
 
