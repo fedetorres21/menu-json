@@ -136,8 +136,8 @@
 
         .submenu-icon {
             vertical-align: middle;
-            width: 1em;
-            height: 1em;
+            width: 0.8em;
+            height: 0.8em;
             display: inline-block !important;
             /* margin-left: 2px; */
         }
@@ -190,7 +190,7 @@
                     if (e.disabled) {
                         menu_html += `<a class='disabled hover-disabled' name="${nameClean}" layout="${e.layoutCode}">${iconContent}<p>${e.nombre}</p></a>`
                     } else {
-                        menu_html += `<a id="menu-submenu${count}" onclick="submenu(${count})" name="${nameClean}" layout="${e.layoutCode}">${iconContent}<p>${e.nombre}${arrowIcon}</p></a>`
+                        menu_html += `<a id="menu-submenu${count}" onclick="submenu(${count})" name="${nameClean}" layout="${e.layoutCode}">${iconContent}<p style="display: inline; letter-spacing: 0.001em;">${e.nombre}${arrowIcon}</p></a>`
                     }
 
                     let sub_a = ''
